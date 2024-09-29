@@ -1,6 +1,11 @@
+{pkgs, ... }:
+
+let
+  lib = pkgs.lib;
+in
 {
   plugins.copilot-lua = {
-    enable = false;
+    enable = lib.MkForce false;
     panel = {
       enabled = false;
       autoRefresh = true;
