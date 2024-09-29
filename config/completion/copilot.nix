@@ -5,7 +5,7 @@ let
 in
 {
   plugins.copilot-lua = {
-    enable = lib.MkForce false;
+    enable = lib.mkForce false;
     panel = {
       enabled = false;
       autoRefresh = true;
